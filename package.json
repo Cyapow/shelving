@@ -19,8 +19,8 @@
 	"author": "Dave Houlbrooke <dave@shax.com>",
 	"license": "0BSD",
 	"type": "module",
-	"module": "./index.js",
-	"main": "./index.js",
+	"module": "./dist/index.js",
+	"main": "./dist/index.js",
 	"types": "./index.d.ts",
 	"exports": {
 		".": "./index.js",
@@ -46,6 +46,7 @@
 		"node": ">=16.0.0"
 	},
 	"scripts": {
+		"prepare": "bun run build",
 		"test": "bun run test:check && bun run test:types && bun run test:unit",
 		"test:check": "biome check .",
 		"test:types": "tsc --noEmit",

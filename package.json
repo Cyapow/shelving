@@ -47,6 +47,7 @@
 	},
 	"scripts": {
 		"prepare": "bun run build",
+		"postinstall": "bun run build",
 		"test": "bun run test:check && bun run test:types && bun run test:unit",
 		"test:check": "biome check .",
 		"test:types": "tsc --noEmit",

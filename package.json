@@ -14,7 +14,7 @@
 	"version": "0.0.0-semantic",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/dhoulb/shelving.git"
+		"url": "git+https://github.com/cyapow/shelving.git"
 	},
 	"author": "Dave Houlbrooke <dave@shax.com>",
 	"license": "0BSD",
@@ -46,7 +46,7 @@
 		"node": ">=16.0.0"
 	},
 	"scripts": {
-		"prepare": "bun run build",
+		"postinstall": "bun run build",
 		"test": "bun run test:check && bun run test:types && bun run test:unit",
 		"test:check": "biome check .",
 		"test:types": "tsc --noEmit",
